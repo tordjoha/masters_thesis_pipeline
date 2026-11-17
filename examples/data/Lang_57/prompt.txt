@@ -1,0 +1,38 @@
+[IMPORTS]
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Set;
+[/IMPORTS]
+
+[FIELDS]
+private static final List cAvailableLocaleList;
+private static Set cAvailableLocaleSet;
+private static final Map cLanguagesByCountry = Collections.synchronizedMap(new HashMap());
+private static final Map cCountriesByLanguage = Collections.synchronizedMap(new HashMap());
+[/FIELDS]
+
+[CONSTRUCTORS]
+public LocaleUtils() {...}
+[/CONSTRUCTORS]
+
+[OTHER_METHODS]
+none
+[/OTHER_METHODS]
+
+[TARGET_METHOD]
+public static boolean isAvailableLocale(Locale locale) {
+        return cAvailableLocaleSet.contains(locale);
+    }
+[/TARGET_METHOD]
+
+Generate a single JUnit 4 test method for the target method above.
+The class under test is LocaleUtils. Use the constructor directly: new LocaleUtils(...).
+Only use methods and fields shown in the segments above.
+Do not include import statements, class declarations, or package declarations.
+Start your response directly with @Test and end after the closing brace of the test method.

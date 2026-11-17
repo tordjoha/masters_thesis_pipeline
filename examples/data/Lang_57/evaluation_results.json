@@ -1,0 +1,14 @@
+[
+  {
+    "sample_id": 1,
+    "compiles": true,
+    "passes_fixed": true,
+    "fails_buggy": true,
+    "fixed_outcome": "pass",
+    "buggy_outcome": "fail",
+    "effective": true,
+    "compile_error": null,
+    "fixed_output": "JUnit version 4.12\n.\nTime: 0,027\n\nOK (1 test)\n\n",
+    "buggy_output": "JUnit version 4.12\n.E\nTime: 0,023\nThere was 1 failure:\n1) testIsAvailableLocale(LLMTest_Lang_57_1)\njava.lang.NullPointerException\n\tat org.apache.commons.lang.LocaleUtils.isAvailableLocale(LocaleUtils.java:223)\n\tat LLMTest_Lang_57_1.testIsAvailableLocale(LLMTest_Lang_57_1.java:17)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect."
+  }
+]

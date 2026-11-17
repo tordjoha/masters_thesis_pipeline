@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this pipeline, please cite it as below."
+title: "Investigating Explainable AI Techniques for Software Testing: Attributing and Analyzing LLM-Generated Unit Tests"
+type: software
+authors:
+  - family-names: "Johansson"
+    given-names: "Tord"
+repository-code: "https://github.com/tordjoha/masters_thesis_pipeline"
+date-released: 2026-12-01
+preferred-citation:
+  type: thesis
+  title: "Investigating Explainable AI Techniques for Software Testing: Attributing and Analyzing LLM-Generated Unit Tests"
+  authors:
+    - family-names: "Johansson"
+      given-names: "Tord"
+  institution:
+    name: "University of Bergen and Western Norway University of Applied Sciences"
+  year: 2026

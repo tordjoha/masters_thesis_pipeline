@@ -1,0 +1,7 @@
+{
+  "imports": "import java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.Collections;\nimport java.util.HashMap;\nimport java.util.HashSet;\nimport java.util.List;\nimport java.util.Locale;\nimport java.util.Map;\nimport java.util.Set;",
+  "fields": "private static final List cAvailableLocaleList;\nprivate static Set cAvailableLocaleSet;\nprivate static final Map cLanguagesByCountry = Collections.synchronizedMap(new HashMap());\nprivate static final Map cCountriesByLanguage = Collections.synchronizedMap(new HashMap());",
+  "constructors": "public LocaleUtils() {...}",
+  "other_methods": "none",
+  "target_method": "public static boolean isAvailableLocale(Locale locale) {\n        return cAvailableLocaleSet.contains(locale);\n    }"
+}

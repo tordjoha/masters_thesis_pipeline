@@ -1,0 +1,78 @@
+{
+  "bug_id": "Lang_57",
+  "modified_class": "org.apache.commons.lang.LocaleUtils",
+  "target_method": "isAvailableLocale",
+  "sample_id": 1,
+  "baseline_tier": "effective",
+  "baseline_length": 242,
+  "method": "exact_shapley",
+  "players": [
+    "imports",
+    "fields",
+    "constructors",
+    "target_method"
+  ],
+  "empty_segments": [
+    "other_methods"
+  ],
+  "attributions": {
+    "imports": -0.1724,
+    "fields": 0.0243,
+    "constructors": 0.269,
+    "other_methods": null,
+    "target_method": 0.3543
+  },
+  "leave_one_out": {
+    "imports": 0.0,
+    "fields": 0.6432,
+    "constructors": 0.8323,
+    "other_methods": null,
+    "target_method": 0.9319
+  },
+  "v_empty": 0.5248,
+  "efficiency_check": {
+    "sum_phi": 0.4752,
+    "target_1_minus_v_empty": 0.4752,
+    "residual": 0.0
+  },
+  "faithfulness": {
+    "deletion_order": [
+      "target_method",
+      "constructors",
+      "fields",
+      "imports"
+    ],
+    "deletion_curve": [
+      0.9319,
+      0.8531,
+      0.8206,
+      0.4752
+    ],
+    "aopc_attribution": 0.7702,
+    "aopc_random": 0.6314,
+    "faithfulness_gain": 0.1388
+  },
+  "stability": {
+    "skipped": true,
+    "temperature": 0.0,
+    "reason": "decoding is deterministic at temperature 0; attributions are exactly reproducible by construction"
+  },
+  "coalition_values": {
+    "EMPTY": 0.5248,
+    "imports": 0.1794,
+    "fields": 0.1209,
+    "constructors": 0.4876,
+    "target_method": 0.5496,
+    "fields+imports": 0.1469,
+    "constructors+imports": 0.0771,
+    "imports+target_method": 0.194,
+    "constructors+fields": 0.1047,
+    "fields+target_method": 0.1768,
+    "constructors+target_method": 0.6033,
+    "constructors+fields+imports": 0.0681,
+    "fields+imports+target_method": 0.1677,
+    "constructors+imports+target_method": 0.3568,
+    "constructors+fields+target_method": 1.0,
+    "constructors+fields+imports+target_method": 1.0
+  }
+}
